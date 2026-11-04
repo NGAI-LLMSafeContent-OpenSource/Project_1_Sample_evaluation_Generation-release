@@ -1,0 +1,10 @@
+.venv/
+__pycache__/
+*.pyc
+benchmark.db
+.env
+.pytest_cache/
+.pytest_tmp/
+evobench.egg-info/
+data/samples.jsonl
+.env.bak*
