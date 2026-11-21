@@ -1,0 +1,28 @@
+{
+  "commands": [
+    {
+      "argv": [
+        "{python}",
+        "-m",
+        "pytest",
+        "-q",
+        "tests"
+      ],
+      "cwd": ".",
+      "name": "upstream-tests",
+      "timeout": 360
+    },
+    {
+      "argv": [
+        "{python}",
+        "-m",
+        "benchmark.cli",
+        "list-skills"
+      ],
+      "cwd": ".",
+      "name": "cli-skills"
+    }
+  ],
+  "scope": "Pinned source byte/mode integrity, declared CPU/HTTP/frontend checks. Full model/GPU/data-dependent functionality is not implied. Upstream failures are preserved and separately documented.",
+  "servers": []
+}

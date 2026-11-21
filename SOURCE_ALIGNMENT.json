@@ -1,0 +1,524 @@
+{
+  "policy": "Unmodified Git blob bytes for existing non-README runtime files; original defects retained. Release-only docs/configuration/examples are listed separately.",
+  "project": "NGAI-LLMSafeContent/Project_1_Sample_evaluation_Generation",
+  "schema": 1,
+  "source_commit": "9826945027de990e8439ecf4ae5d05c962ad0572",
+  "source_files": {
+    ".env.example": {
+      "git_blob": "4e00e746e1d1e24486d42209c995b47062188fa9",
+      "mode": "100644"
+    },
+    ".gitignore": {
+      "git_blob": "f065a20d16ab98e916c9173749259ccf497d8a84",
+      "mode": "100644"
+    },
+    "Dockerfile": {
+      "git_blob": "b1bdb34024f13b1d1a9c7138ea4d42800a4ed544",
+      "mode": "100644"
+    },
+    "Makefile": {
+      "git_blob": "a7c3799ebf9ea0cb12c21abc1414b0ef412c4b39",
+      "mode": "100644"
+    },
+    "README_value_qa.md": {
+      "git_blob": "a80afca21a2579fbd663095018ac9f8698bb8fb5",
+      "mode": "100644"
+    },
+    "benchmark/__init__.py": {
+      "git_blob": "5e80ba85a936791e813fd102e7b0fb04c694f9ad",
+      "mode": "100644"
+    },
+    "benchmark/adapters/llm.py": {
+      "git_blob": "0579e34781198a406db56746b11d8593e2a41056",
+      "mode": "100644"
+    },
+    "benchmark/adapters/llm_rightcode.py": {
+      "git_blob": "b42270bc13f92ab5d34cbf2a05e46c4f37debf6c",
+      "mode": "100644"
+    },
+    "benchmark/adapters/retriever.py": {
+      "git_blob": "98f72f5722bdcced280451d465b389ce15178102",
+      "mode": "100644"
+    },
+    "benchmark/adapters/retriever_baidu.py": {
+      "git_blob": "c06bed409c697122c08bbbeba4764bf4bb5b2e99",
+      "mode": "100644"
+    },
+    "benchmark/adapters/retriever_wikipedia.py": {
+      "git_blob": "b8694dc5995cae0d2087b2b3d063c1bfb9dbf67c",
+      "mode": "100644"
+    },
+    "benchmark/agents/base.py": {
+      "git_blob": "f94d149afa06d026acc60eac7d637b30778050ec",
+      "mode": "100644"
+    },
+    "benchmark/agents/claim_agent.py": {
+      "git_blob": "d9814215dec1e314f0ca2ce633a22b415a751e60",
+      "mode": "100644"
+    },
+    "benchmark/agents/judge_agent.py": {
+      "git_blob": "824a065b652ad2d00c7755557f1374209f1c1d15",
+      "mode": "100644"
+    },
+    "benchmark/agents/question_agent.py": {
+      "git_blob": "5bfe1a7f02aa57712574eaf4fd6b2d01f9f0aea5",
+      "mode": "100644"
+    },
+    "benchmark/agents/sample_factory_agent.py": {
+      "git_blob": "13da90dd2a298eb1d23c05219d4cb72a87e25fac",
+      "mode": "100644"
+    },
+    "benchmark/agents/skills/__init__.py": {
+      "git_blob": "96aa084974278dd568ce1a01a25c1f38e52dee24",
+      "mode": "100644"
+    },
+    "benchmark/agents/skills/_document_common.py": {
+      "git_blob": "7e72a67fa1e4ba6d4430c6ed9f52b87e3a979d39",
+      "mode": "100644"
+    },
+    "benchmark/agents/skills/base.py": {
+      "git_blob": "9ca8dc5055321c80fd12c7cbf97de0c7e0c83011",
+      "mode": "100644"
+    },
+    "benchmark/agents/skills/benchmark_qa/__init__.py": {
+      "git_blob": "d22bdd06aac4ee72e622790355e8fc0fbc2d1131",
+      "mode": "100644"
+    },
+    "benchmark/agents/skills/benchmark_qa/prompts.py": {
+      "git_blob": "baa880ea07dccd34dc69aecbc0ea46d515a0f465",
+      "mode": "100644"
+    },
+    "benchmark/agents/skills/benchmark_qa/schema.py": {
+      "git_blob": "d39982a6a1adcf74f1b9ce9065cb574f7c6b9ef9",
+      "mode": "100644"
+    },
+    "benchmark/agents/skills/benchmark_qa/skill.py": {
+      "git_blob": "8bbf570c6208af39ddc8e9082904db008f0ace4e",
+      "mode": "100644"
+    },
+    "benchmark/agents/skills/doc_to_answer/README.md": {
+      "git_blob": "e91646ec7a40b71554b12f0df9fd54e1ceb1e2fd",
+      "mode": "100644"
+    },
+    "benchmark/agents/skills/doc_to_answer/__init__.py": {
+      "git_blob": "41f40bfd85af02a53b41a3ca371d318569368e52",
+      "mode": "100644"
+    },
+    "benchmark/agents/skills/doc_to_answer/prompts.py": {
+      "git_blob": "6b97fe56a9c801770308d5f75aabe6b1fc6f88cb",
+      "mode": "100644"
+    },
+    "benchmark/agents/skills/doc_to_answer/skill.py": {
+      "git_blob": "47dcee48451c87254e806f6948735ccc0d9589cb",
+      "mode": "100644"
+    },
+    "benchmark/agents/skills/doc_to_qa/README.md": {
+      "git_blob": "682f69c9615b321339a5a418f538499a3f30b6d5",
+      "mode": "100644"
+    },
+    "benchmark/agents/skills/doc_to_qa/__init__.py": {
+      "git_blob": "8cadeb47bcff0b7990c82612f033177ab4f8640f",
+      "mode": "100644"
+    },
+    "benchmark/agents/skills/doc_to_qa/prompts.py": {
+      "git_blob": "bbf2770e51b71b4f88bde98b26f7bd0a65a00214",
+      "mode": "100644"
+    },
+    "benchmark/agents/skills/doc_to_qa/skill.py": {
+      "git_blob": "7e4dadb556261f791011774f9ac6e7d34ae561c3",
+      "mode": "100644"
+    },
+    "benchmark/agents/skills/doc_to_qa_llm/__init__.py": {
+      "git_blob": "40cfd1f6ecc1fe7d551fdf468e1827db225407d3",
+      "mode": "100644"
+    },
+    "benchmark/agents/skills/doc_to_qa_llm/prompts.py": {
+      "git_blob": "1361efa19ab2e53afe8a5daae07e1b8b7d1d6bc3",
+      "mode": "100644"
+    },
+    "benchmark/agents/skills/doc_to_qa_llm/skill.py": {
+      "git_blob": "cfe09c40c2b5f782b293594075e8b88a16a445f4",
+      "mode": "100644"
+    },
+    "benchmark/agents/skills/doc_to_qa_steps/README.md": {
+      "git_blob": "1d22e772754b1c9a3aa31ba067b099ddc89fa93e",
+      "mode": "100644"
+    },
+    "benchmark/agents/skills/doc_to_qa_steps/__init__.py": {
+      "git_blob": "b57a4c56788b19806fa7e9c17b5b6235e5911a73",
+      "mode": "100644"
+    },
+    "benchmark/agents/skills/doc_to_qa_steps/prompts.py": {
+      "git_blob": "0073fe873094f07542a068001ef5e84f5a59f046",
+      "mode": "100644"
+    },
+    "benchmark/agents/skills/doc_to_qa_steps/skill.py": {
+      "git_blob": "39fbccc6f180ec0bc3b416d7ba58bc0094e6818f",
+      "mode": "100644"
+    },
+    "benchmark/agents/skills/doc_to_question/README.md": {
+      "git_blob": "cfba2436daa0050af84adc094e00164aaf58e207",
+      "mode": "100644"
+    },
+    "benchmark/agents/skills/doc_to_question/__init__.py": {
+      "git_blob": "dc0776f16dbc5bb42cd3760eeca0942f1d95bf98",
+      "mode": "100644"
+    },
+    "benchmark/agents/skills/doc_to_question/prompts.py": {
+      "git_blob": "0895f6fd0cc83aae0de7c9261887201b654dd957",
+      "mode": "100644"
+    },
+    "benchmark/agents/skills/doc_to_question/skill.py": {
+      "git_blob": "53a5a3f9feb3ffe8a0ee0746966ed13bde5d320b",
+      "mode": "100644"
+    },
+    "benchmark/agents/skills/error_to_training_samples/README.md": {
+      "git_blob": "bb25fefe34a0b89ad612daa4340c079d8ffeb168",
+      "mode": "100644"
+    },
+    "benchmark/agents/skills/error_to_training_samples/__init__.py": {
+      "git_blob": "fb547087dbdfde3b32e8c4474eb26ff6b41e59a7",
+      "mode": "100644"
+    },
+    "benchmark/agents/skills/error_to_training_samples/prompts.py": {
+      "git_blob": "6f8838cf7530680f9f324ab7803595a2c1faf366",
+      "mode": "100644"
+    },
+    "benchmark/agents/skills/error_to_training_samples/skill.py": {
+      "git_blob": "892a414fc3bcba6b40814bba3721c4caa20cd045",
+      "mode": "100644"
+    },
+    "benchmark/agents/skills/paper_to_experience/README.md": {
+      "git_blob": "479d8253a2e77c2dbe449148944357ef85164f66",
+      "mode": "100644"
+    },
+    "benchmark/agents/skills/paper_to_experience/__init__.py": {
+      "git_blob": "0b2a2ba35d43f12d74372969d5ed77ae0ca6d886",
+      "mode": "100644"
+    },
+    "benchmark/agents/skills/paper_to_experience/prompts.py": {
+      "git_blob": "d489b5b65583406bb11101adec3763d8a3bad9db",
+      "mode": "100644"
+    },
+    "benchmark/agents/skills/paper_to_experience/skill.py": {
+      "git_blob": "e0d2e23ca1c8425d35fab47e58e07645869d2c98",
+      "mode": "100644"
+    },
+    "benchmark/agents/skills/registry.py": {
+      "git_blob": "24d9f9748594e31a49e5d2d9befe1c22780c6e8d",
+      "mode": "100644"
+    },
+    "benchmark/agents/skills/templates/paper_corpus_template.jsonl": {
+      "git_blob": "196bc608684fb0e6c3c679c12fa1222023335909",
+      "mode": "100644"
+    },
+    "benchmark/agents/skills/value_qa/README.md": {
+      "git_blob": "10809587d814237756a9c2e3ec1f8c151144993a",
+      "mode": "100644"
+    },
+    "benchmark/agents/skills/value_qa/README.old.md": {
+      "git_blob": "9a6023fdf09072524f13ea004de27265012bef20",
+      "mode": "100644"
+    },
+    "benchmark/agents/skills/value_qa/__init__.py": {
+      "git_blob": "be242f3bccd3514cd916abbf0e07388d5346c7e3",
+      "mode": "100644"
+    },
+    "benchmark/agents/skills/value_qa/dimensions.py": {
+      "git_blob": "fecdc3295e19d64a65a2a92a047df07a023b1ef5",
+      "mode": "100644"
+    },
+    "benchmark/agents/skills/value_qa/missing_annotation.py": {
+      "git_blob": "a96e4e52f74a6f36619fc9ff50a0e9d8129a7a9f",
+      "mode": "100644"
+    },
+    "benchmark/agents/skills/value_qa/prompts.py": {
+      "git_blob": "f1df971baa4222893b5b6cfbcf7dcfbee160822e",
+      "mode": "100644"
+    },
+    "benchmark/agents/skills/value_qa/schema.py": {
+      "git_blob": "1f370ace0213bdce363d473a500c0edf327c01c3",
+      "mode": "100644"
+    },
+    "benchmark/agents/skills/value_qa/skill.py": {
+      "git_blob": "adf39df44251da36485451349898104c39bf7806",
+      "mode": "100644"
+    },
+    "benchmark/agents/skills/value_qa/taxonomy.py": {
+      "git_blob": "3bd3d8fb6795c6849461ae105e2655088038e3e4",
+      "mode": "100644"
+    },
+    "benchmark/agents/source_agent.py": {
+      "git_blob": "f1ea63c32ebe9417e21216422421f96f1de8db71",
+      "mode": "100644"
+    },
+    "benchmark/agents/source_selector_agent.py": {
+      "git_blob": "c0beec4d724799d27511b2e410279a3194ca8713",
+      "mode": "100644"
+    },
+    "benchmark/agents/verifier_agent.py": {
+      "git_blob": "47bb8c063a278ad8cb8a537f98fbcbfa3c21d10f",
+      "mode": "100644"
+    },
+    "benchmark/agents/verifier_patches.py": {
+      "git_blob": "2975af687ac57ff6f0131b77d58dac938a732ef3",
+      "mode": "100644"
+    },
+    "benchmark/api/main.py": {
+      "git_blob": "8b1f70e2b904f8d238f3ae58cd9028c89a3648bf",
+      "mode": "100644"
+    },
+    "benchmark/arena/battle.py": {
+      "git_blob": "d19afa02b247d96635cf6410b1116ba5eb540a9e",
+      "mode": "100644"
+    },
+    "benchmark/arena/elo.py": {
+      "git_blob": "aa9b6217126d577eb00688c26240b5139a4166e3",
+      "mode": "100644"
+    },
+    "benchmark/bootstrap.py": {
+      "git_blob": "4895a3b7373b1f4e90de16a3777c3dca3e724277",
+      "mode": "100644"
+    },
+    "benchmark/cli.py": {
+      "git_blob": "adc580af10747e6be9f2917137e9320728cb903a",
+      "mode": "100644"
+    },
+    "benchmark/core/config.py": {
+      "git_blob": "58239352444cf929c049734ec658201c2b612c89",
+      "mode": "100644"
+    },
+    "benchmark/core/logging.py": {
+      "git_blob": "eaef6ef8c7c558d702ac9850a32d80719112fec4",
+      "mode": "100644"
+    },
+    "benchmark/evaluation/aggregation.py": {
+      "git_blob": "aa1192d87f077fe02ce7f1849a57fb707144064c",
+      "mode": "100644"
+    },
+    "benchmark/evaluation/scorers.py": {
+      "git_blob": "547cae1b86a2921ea8dc89ca54aca46a87aa9dfa",
+      "mode": "100644"
+    },
+    "benchmark/keywords.py": {
+      "git_blob": "ffdcee6b5bf1385f933832dfc2538ba8630e3a88",
+      "mode": "100644"
+    },
+    "benchmark/pipelines/evaluation.py": {
+      "git_blob": "23e217af02757291d57b549c82f9b3a69e3d07c0",
+      "mode": "100644"
+    },
+    "benchmark/pipelines/generation.py": {
+      "git_blob": "f65325a272a765e7a6d4477f3e0c5ff4dbafb7c4",
+      "mode": "100644"
+    },
+    "benchmark/pipelines/sample_generation.py": {
+      "git_blob": "f694360fb8ddfd464ecf7f3f043ac9cea9160366",
+      "mode": "100644"
+    },
+    "benchmark/pipelines/sample_generation_patches.py": {
+      "git_blob": "40a60b9c33c554a46b25d5ee3f8d9557e75ceb19",
+      "mode": "100644"
+    },
+    "benchmark/postprocessors/__init__.py": {
+      "git_blob": "283b0b4f0c4fcd759ec117634da071418ae69bd5",
+      "mode": "100644"
+    },
+    "benchmark/postprocessors/experience_to_qa.py": {
+      "git_blob": "57a41dd06a522d3e65592534052159a3faa6ab38",
+      "mode": "100644"
+    },
+    "benchmark/samples/__init__.py": {
+      "git_blob": "42494e57510f8ba2625d74e7bc5086781bdbe794",
+      "mode": "100644"
+    },
+    "benchmark/samples/converters.py": {
+      "git_blob": "c10e6da9eb858459947ae4cfff2a0ae3ec3913ce",
+      "mode": "100644"
+    },
+    "benchmark/schemas.py": {
+      "git_blob": "aeca873f848aa6602509d8ce698a8a354131249f",
+      "mode": "100644"
+    },
+    "benchmark/storage/data_layout.py": {
+      "git_blob": "aab6a5a8ee8b0ce8a1b7e793af21ccf7da402b48",
+      "mode": "100644"
+    },
+    "benchmark/storage/db.py": {
+      "git_blob": "aedbd4491656c6048224430010450cdf470a8471",
+      "mode": "100644"
+    },
+    "benchmark/storage/db_patches.py": {
+      "git_blob": "eaaedaed3b66c5f8ed684c02226784e8633b9e74",
+      "mode": "100644"
+    },
+    "benchmark/storage/repository.py": {
+      "git_blob": "1b515bd83a9c61e42fcd28a8bbf269795db9de23",
+      "mode": "100644"
+    },
+    "benchmark/storage/repository_patches.py": {
+      "git_blob": "fe8445a41378ea924470db608b7590abb92147b3",
+      "mode": "100644"
+    },
+    "configs/sample_skills.yaml": {
+      "git_blob": "ee93a6dbf01649e2d1188791fd0b30cbb7b21036",
+      "mode": "100644"
+    },
+    "configs/scoring.yaml": {
+      "git_blob": "19b19698c2a0dda71a536fbf3afc2a8c41fda51d",
+      "mode": "100644"
+    },
+    "configs/skills.yaml": {
+      "git_blob": "f35ecc9b1ed32bec59f966a426cd95d86e975800",
+      "mode": "100644"
+    },
+    "configs/value_evaluation_dimensions.yaml": {
+      "git_blob": "999eb47c929e2e7e70ca5ee2d3c396e978459f29",
+      "mode": "100644"
+    },
+    "configs/value_qa_keywords.yaml": {
+      "git_blob": "7daf23bb2b43be09ce0685e76225c863b2fbaf7b",
+      "mode": "100644"
+    },
+    "configs/value_qa_keywords_v2.yaml": {
+      "git_blob": "5553c8c45ba26dea42b0a8d0d18fc5169044701e",
+      "mode": "100644"
+    },
+    "configs/value_taxonomy.yaml": {
+      "git_blob": "30665f46398053878a21a60080c4ac9de6ac01ba",
+      "mode": "100644"
+    },
+    "docker-compose.yml": {
+      "git_blob": "0a9b6d6f1d9c02233f3d252e3fc2a0e9624a1285",
+      "mode": "100644"
+    },
+    "docs/benchmark_qa_pipeline_demo.md": {
+      "git_blob": "da4f8e40403d47fdf291e81d743d29e83c396ba2",
+      "mode": "100644"
+    },
+    "pyproject.toml": {
+      "git_blob": "ce8e31db3e166453439aabd904b9e062160f61e4",
+      "mode": "100644"
+    },
+    "scripts/batch_generate_benchmark_qa.sh": {
+      "git_blob": "71a58d8da6e62c16400a2cb68b10b57b18ea3cf9",
+      "mode": "100644"
+    },
+    "scripts/batch_generate_benchmark_qa_v2.sh": {
+      "git_blob": "a699cf1231a724e4fa05f4dbf24b7997748abf9a",
+      "mode": "100644"
+    },
+    "scripts/batch_value_qa_round3.py": {
+      "git_blob": "4d542f8cb43de589acb8bd87a005d542a5b40a1e",
+      "mode": "100644"
+    },
+    "scripts/batch_value_qa_round3.sh": {
+      "git_blob": "ed3e594a95d4d21425e93c0fa049996321f0c3fd",
+      "mode": "100755"
+    },
+    "scripts/detect_missing_annotations.py": {
+      "git_blob": "dd783ad3801a958d2d6369a9cd1e762fe63cc5ed",
+      "mode": "100644"
+    },
+    "scripts/nightly_refresh.py": {
+      "git_blob": "6701aa36c46a8282451b22ab6afd80b7d310db41",
+      "mode": "100644"
+    },
+    "scripts/qc_report.py": {
+      "git_blob": "853ef13c384df103441270a83c4d91f2597dba5b",
+      "mode": "100644"
+    },
+    "scripts/regen_medium.py": {
+      "git_blob": "7a14023a940bc01c9dbe6a2909c8b59a67dd5dc1",
+      "mode": "100644"
+    },
+    "scripts/rewrite_marked_by_reviews.py": {
+      "git_blob": "7d7b22df5bec0577169481830a49e34154e18e5e",
+      "mode": "100644"
+    },
+    "scripts/rewrite_qa.py": {
+      "git_blob": "15cb6a8d4a1147c2b58f665b286ba6d3277f3179",
+      "mode": "100644"
+    },
+    "scripts/sample_qc.py": {
+      "git_blob": "4f30e886cbfbf81f129ffd59f123888d21b99a29",
+      "mode": "100644"
+    },
+    "scripts/scan_qa_self_contained.py": {
+      "git_blob": "23a7534a3df4d428e03afb403dff76c2f7431b8c",
+      "mode": "100644"
+    },
+    "scripts/smoke_6dim_1kw.py": {
+      "git_blob": "4872c19c9fcd2f84a9b6c263538cfa70ead90304",
+      "mode": "100644"
+    },
+    "scripts/test_medium_only.py": {
+      "git_blob": "e3eea4b4f640785a2ce3f4adc5e75a473d8f5fba",
+      "mode": "100644"
+    },
+    "scripts/test_single_keyword.py": {
+      "git_blob": "683f35331a94ff0cc58d0c9f4380ff369913c108",
+      "mode": "100644"
+    },
+    "scripts/viewer/__init__.py": {
+      "git_blob": "33d03ef515eda042457096a480605b3cba79206b",
+      "mode": "100644"
+    },
+    "scripts/viewer/app.py": {
+      "git_blob": "8acd61d55da1ab9422761bf862720a44a2596a5d",
+      "mode": "100644"
+    },
+    "scripts/viewer/components.py": {
+      "git_blob": "a9314e926f535549508dc6ef1eeff57b481d28df",
+      "mode": "100644"
+    },
+    "scripts/viewer/data.py": {
+      "git_blob": "8f7c23d4fda06ed93c692129d123d68a1a9f5b91",
+      "mode": "100644"
+    },
+    "scripts/viewer/evolution_panel.py": {
+      "git_blob": "fcb49d3ad6c4d31de4c3aa1c2083ec9526282031",
+      "mode": "100644"
+    },
+    "scripts/viewer/marks.py": {
+      "git_blob": "77fb85bb8207d66303a85ed2c23b6b0d81b7b48c",
+      "mode": "100644"
+    },
+    "scripts/viewer/qc_data.py": {
+      "git_blob": "747a62f543dda5823cfc73d0749dd0cdaf92eba7",
+      "mode": "100644"
+    },
+    "scripts/viewer/qc_panel.py": {
+      "git_blob": "f0a126bc71a68e2259ca24b16951bea7e326b932",
+      "mode": "100644"
+    },
+    "sitecustomize.py": {
+      "git_blob": "0a2656653c78697ce8638cade9115d8c426ae7d8",
+      "mode": "100644"
+    },
+    "tests/conftest.py": {
+      "git_blob": "468859c37be78a3d521696615d6e9765a8efa404",
+      "mode": "100644"
+    },
+    "tests/test_agents_v2.py": {
+      "git_blob": "e667fd4420bb9e731fcd46883c3d6e90bf583e41",
+      "mode": "100644"
+    },
+    "tests/test_elo.py": {
+      "git_blob": "d54553383e0423950183780f622fc1d61d829dd7",
+      "mode": "100644"
+    },
+    "tests/test_scorer.py": {
+      "git_blob": "01b2857158df92a3a1b30f4a494f32de694d2727",
+      "mode": "100644"
+    },
+    "tests/test_unified_sample_skills.py": {
+      "git_blob": "efcc0cd54580b2b9fec3b18f10ea73ab4f7d85bb",
+      "mode": "100644"
+    },
+    "uv.lock": {
+      "git_blob": "24e699648058a423519dc306cc822d02bced97c2",
+      "mode": "100644"
+    }
+  }
+}

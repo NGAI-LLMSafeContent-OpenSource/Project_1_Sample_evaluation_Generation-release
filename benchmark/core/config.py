@@ -9,11 +9,11 @@ class Settings(BaseSettings):
     samples_jsonl_path: str = "./data/samples.jsonl"
     items_jsonl_path: str = "./data/items.jsonl"
 
-    llm_enabled: bool = False
+    llm_enabled: bool = True
     llm_provider: str = "openai_compatible"
     llm_model: str = "qwen3-32b"
-    llm_api_key: str = ""
-    llm_api_base: str = "http://127.0.0.1:8000/v1"
+    llm_api_key: str = "EMPTY"
+    llm_api_base: str = "http://10.208.62.156:8002/v1"
     llm_timeout_seconds: float = 45.0
     llm_temperature: float = 0.2
     llm_max_tokens: int = 2048
