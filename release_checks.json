@@ -21,6 +21,23 @@
       ],
       "cwd": ".",
       "name": "cli-skills"
+    },
+    {
+      "name": "viewer-synthetic-input",
+      "argv": [
+        "{python}",
+        "-c",
+        "from pathlib import Path;import shutil;p=Path('data/samples/value_qa');p.mkdir(parents=True,exist_ok=True);shutil.copyfile('data/samples/release_demo/value_qa.jsonl',p/'release_demo.jsonl')"
+      ]
+    },
+    {
+      "name": "viewer-render",
+      "argv": [
+        "{python}",
+        "-c",
+        "from streamlit.testing.v1 import AppTest;a=AppTest.from_file('scripts/viewer/app.py',default_timeout=45).run();assert not a.exception,[x.message for x in a.exception];assert len(a.dataframe)>0"
+      ],
+      "timeout": 90
     }
   ],
   "scope": "Pinned source byte/mode integrity, declared CPU/HTTP/frontend checks. Full model/GPU/data-dependent functionality is not implied. Upstream failures are preserved and separately documented.",

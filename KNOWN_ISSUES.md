@@ -15,3 +15,7 @@
 ## 问题处理
 
 请将错误与复现条件提交至公开仓Issues，由原仓维护者处理。发布分支仅同步审核后的源码和说明，其他平台不单独修改实现。
+
+## Viewer输入目录
+
+`scripts/viewer/app.py` 从 `data/samples/value_qa/*.jsonl` 枚举输入。目录为空时原仓会因 selected_file=None 报TypeError；保留原实现。运行前按README放入生成结果或复制发布演示，不会将历史原数据集一并公开。

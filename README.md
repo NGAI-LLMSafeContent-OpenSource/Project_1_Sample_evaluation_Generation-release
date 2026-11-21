@@ -34,12 +34,15 @@ cp .env.example .env
 # 将.env中的模型、地址、凭据改为自己的配置
 python -m benchmark.cli list-skills
 python -m benchmark.cli generate-samples --skill-ids value_qa --topic "自选主题" --corpus-jsonl /path/to/corpus.jsonl --samples-jsonl /path/to/generated.jsonl
+mkdir -p data/samples/value_qa
+# 离线查看发布演示；已有真实生成结果时放入同一目录
+cp data/samples/release_demo/value_qa.jsonl data/samples/value_qa/release_demo.jsonl
 python -m streamlit run scripts/viewer/app.py --server.address 127.0.0.1 --server.port 8501
 ```
 
 ## 使用与输出
 
-输入语料使用SourceDocument JSONL，包含source_id、title、content等字段。生成后在Viewer中填写实际JSONL路径，查看high/medium/low三联结果并标注、导出。离线演示样例位于 `data/samples/release_demo/value_qa.jsonl`，仅用于界面与格式验证。技能说明见 `benchmark/agents/skills/value_qa/README.md`。
+输入语料使用SourceDocument JSONL，包含source_id、title、content等字段。生成后将生成JSONL放在 `data/samples/value_qa/`，在Viewer中选择文件，查看high/medium/low三联结果并标注、导出。离线演示样例位于 `data/samples/release_demo/value_qa.jsonl`，仅用于界面与格式验证。技能说明见 `benchmark/agents/skills/value_qa/README.md`。
 
 ## 配置与外部依赖
 
