@@ -2,17 +2,17 @@
   "checks": {
     "commands": [
       [
-        "/data/fzk/env/published-runtime-audit/Project_1_Sample_evaluation_Generation/bin/python",
-        "-B",
-        "tools/release_check.py"
+        "python3",
+        "tools/release_redaction_check.py"
       ]
     ],
-    "passed": true
+    "passed": true,
+    "scope": "Address-redaction update: complete inventory/hash/mode/provenance checks and targeted syntax/configuration tests. Not a new full real-model acceptance."
   },
   "files": {
     ".env.example": {
       "mode": "100644",
-      "sha256": "38daab2e8a9d40555bb133c6fd3b9030a963fe5446fd9ed5cdc9c6a7011856d8"
+      "sha256": "eb2f94709b41197be9cde619ac458ca79dde99d099312398bd9fa41f10980576"
     },
     ".gitignore": {
       "mode": "100644",
@@ -36,7 +36,7 @@
     },
     "README.md": {
       "mode": "100644",
-      "sha256": "86ea1c95d8bac23e5e805aea2683a2c3f419d8c95a3e42c5fb190915a6da858b"
+      "sha256": "1c39af9f53daf4326de48005eb7205a689fc6c044ce156711409c682bb5172ad"
     },
     "README_value_qa.md": {
       "mode": "100644",
@@ -44,11 +44,11 @@
     },
     "RELEASE_FILES.md": {
       "mode": "100644",
-      "sha256": "ccad15339f59b8e6d9a505f48d86abb71b5a1eaa7a48586fdb348bf70b7b79dc"
+      "sha256": "d3b9d7bdd0d2653236ffcbb0e9664d3d094ec90fc6eed19fbe0ac5d8a9e8486e"
     },
     "SOURCE_ALIGNMENT.json": {
       "mode": "100644",
-      "sha256": "30119429063dd73f75b00e3e0825f1ea265c24e9b191178f57862ccd03dc19c5"
+      "sha256": "3aa6cdb9d9bc984c90bf52c750fe0505fc875ecb9b7ea22b968fb38e101031bb"
     },
     "THIRD_PARTY_NOTICES.md": {
       "mode": "100644",
@@ -316,7 +316,7 @@
     },
     "benchmark/core/config.py": {
       "mode": "100644",
-      "sha256": "dc219a881c8b7b0a1f6844176fb19c5c8656db9c372b052fa47a883c519cbbf8"
+      "sha256": "d301547440e39c61596a379e3d7d8d24ff301bf53f07a164067de062e2458db0"
     },
     "benchmark/core/logging.py": {
       "mode": "100644",
@@ -560,7 +560,11 @@
     },
     "tools/release_check.py": {
       "mode": "100644",
-      "sha256": "6b370aab6b096a1df48e44995198d6d46c0e54ac5f7cf371a327b8670264f5f0"
+      "sha256": "d38b0bc7896b998440de0b052bf9604920beba7a9cf06d35685b276dc4398e34"
+    },
+    "tools/release_redaction_check.py": {
+      "mode": "100644",
+      "sha256": "239c41ab1f1b0cd0d0029b51177b07f577fdb804eedef040fa1854d8b2b768a6"
     },
     "uv.lock": {
       "mode": "100644",
@@ -568,7 +572,17 @@
     }
   },
   "project": "NGAI-LLMSafeContent/Project_1_Sample_evaluation_Generation",
+  "redaction_update": {
+    "authorized": true,
+    "date": "2026-11-27",
+    "parent_release_commit": "188397fe16475f255aa283cac6afd44980b0630e",
+    "paths": [
+      ".env.example",
+      "benchmark/core/config.py"
+    ],
+    "placeholder_namespace": "example.invalid"
+  },
   "schema": 1,
   "source_commit": "9826945027de990e8439ecf4ae5d05c962ad0572",
-  "whitelist_sha256": "4081f86b6b9b1e0ccf1e75b2dc8f5fdd1f425c64750fab3e23b9094d9f986e94"
+  "whitelist_sha256": "37f313fb0ddd1dd7d2fd15ff13cc20a410a7729f232eed40a7a3573f4e6d1e61"
 }

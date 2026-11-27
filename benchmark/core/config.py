@@ -13,7 +13,7 @@ class Settings(BaseSettings):
     llm_provider: str = "openai_compatible"
     llm_model: str = "qwen3-32b"
     llm_api_key: str = "EMPTY"
-    llm_api_base: str = "http://10.208.62.156:8002/v1"
+    llm_api_base: str = "http://llm-api.example.invalid:8002/v1"
     llm_timeout_seconds: float = 45.0
     llm_temperature: float = 0.2
     llm_max_tokens: int = 2048

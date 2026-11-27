@@ -2,11 +2,10 @@
 
 原仓：`NGAI-LLMSafeContent/Project_1_Sample_evaluation_Generation`；源提交：`9826945027de990e8439ecf4ae5d05c962ad0572`；分支：`release/1.0`。
 
-本清单逐文件列出发布内容。原有非README实现/配置/资源保持Git对象字节和模式一致；README与发布新增材料单独登记。RELEASE_MANIFEST.json和SHA256SUMS由发布器生成，不形成自引用哈希。
+2026-11-27：按发布方授权将部署环境内网地址替换为保留示例域名。端口、接口路径和业务算法保持不变；配套测试同步替换。原始地址不在本清单中重复展示。
 
 ## 来自原仓、原样保留的文件
 
-- `.env.example`
 - `.gitignore`
 - `Dockerfile`
 - `Makefile`
@@ -76,7 +75,6 @@
 - `benchmark/arena/elo.py`
 - `benchmark/bootstrap.py`
 - `benchmark/cli.py`
-- `benchmark/core/config.py`
 - `benchmark/core/logging.py`
 - `benchmark/evaluation/aggregation.py`
 - `benchmark/evaluation/scorers.py`
@@ -136,7 +134,12 @@
 - `tests/test_unified_sample_skills.py`
 - `uv.lock`
 
-## README及发布新增材料
+## 经授权仅替换地址的原有文件
+
+- `.env.example`
+- `benchmark/core/config.py`
+
+## 发布说明与验证支持文件
 
 - `KNOWN_ISSUES.md`
 - `LICENSE`
@@ -148,12 +151,9 @@
 - `release_checks.json`
 - `requirements.txt`
 - `tools/release_check.py`
+- `tools/release_redaction_check.py`
 
-## 生成的校验文件
+## 自动生成的完整性文件
 
 - `RELEASE_MANIFEST.json`
 - `SHA256SUMS`
-
-## 排除范围
-
-明确弃用的历史原型、旧版本快照、缓存、数据库、用户配置和预跑产物未发布。模型、原始数据/知识库和外部服务按README准备，不以缩减/改写同路径数据文件冒充完整交付。源码原有错误保留，见KNOWN_ISSUES.md。

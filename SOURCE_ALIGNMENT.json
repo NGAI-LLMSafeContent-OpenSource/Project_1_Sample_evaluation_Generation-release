@@ -1,13 +1,23 @@
 {
-  "policy": "Unmodified Git blob bytes for existing non-README runtime files; original defects retained. Release-only docs/configuration/examples are listed separately.",
+  "authorized_address_redactions": {
+    ".env.example": {
+      "original_source_git_blob": "4e00e746e1d1e24486d42209c995b47062188fa9",
+      "previous_release_git_blob": "4e00e746e1d1e24486d42209c995b47062188fa9",
+      "reason": "User-authorized replacement of private deployment addresses with reserved example.invalid host placeholders; ports and paths preserved.",
+      "release_git_blob": "a26791f07ebf1ef35f122202a30fb89128c4586d"
+    },
+    "benchmark/core/config.py": {
+      "original_source_git_blob": "58239352444cf929c049734ec658201c2b612c89",
+      "previous_release_git_blob": "58239352444cf929c049734ec658201c2b612c89",
+      "reason": "User-authorized replacement of private deployment addresses with reserved example.invalid host placeholders; ports and paths preserved.",
+      "release_git_blob": "b047cc64aa47d7dece3597207c437a4669f03e98"
+    }
+  },
+  "policy": "source_files preserve original pinned Git bytes and modes. authorized_address_redactions explicitly record the approved address-only exceptions; no other business logic edits.",
   "project": "NGAI-LLMSafeContent/Project_1_Sample_evaluation_Generation",
   "schema": 1,
   "source_commit": "9826945027de990e8439ecf4ae5d05c962ad0572",
   "source_files": {
-    ".env.example": {
-      "git_blob": "4e00e746e1d1e24486d42209c995b47062188fa9",
-      "mode": "100644"
-    },
     ".gitignore": {
       "git_blob": "f065a20d16ab98e916c9173749259ccf497d8a84",
       "mode": "100644"
@@ -282,10 +292,6 @@
     },
     "benchmark/cli.py": {
       "git_blob": "adc580af10747e6be9f2917137e9320728cb903a",
-      "mode": "100644"
-    },
-    "benchmark/core/config.py": {
-      "git_blob": "58239352444cf929c049734ec658201c2b612c89",
       "mode": "100644"
     },
     "benchmark/core/logging.py": {
